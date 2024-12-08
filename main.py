@@ -4,8 +4,6 @@ import requests
 # API Keys and Tokens from environment variables
 FINNHUB_API_KEY = os.getenv('FINNHUB_API_KEY')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-print(f"FINNHUB_API_KEY length: {len(FINNHUB_API_KEY)}")
-print(f"TELEGRAM_BOT_TOKEN length: {len(TELEGRAM_BOT_TOKEN)}")
 
 
 # Tickers to monitor
