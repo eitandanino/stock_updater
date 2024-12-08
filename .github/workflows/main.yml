@@ -4,6 +4,7 @@ on:
   schedule:
     # Schedule to run at 16:02 EST (21:02 UTC during standard time)
     - cron: "2 21 * * *"
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   run-script:
