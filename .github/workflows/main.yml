@@ -29,5 +29,8 @@ jobs:
 
       # Step 4: Run the script
       - name: Run Python script
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
           python main.py
