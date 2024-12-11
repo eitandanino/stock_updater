@@ -16,9 +16,9 @@ def is_market_open():
     response = requests.get(url).json()
 
     # Check if the market is open
-    if response.get("isOpen"):
-        return True
-    return False
+    if response.get("session") is None:
+        return False
+    return True
 
 
 # Function to fetch ticker data
